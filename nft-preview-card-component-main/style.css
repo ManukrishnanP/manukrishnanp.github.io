@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit");
+body {
+  background-color: #0c1b2d;
+}
+
+.card-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card {
+  width: 300px;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background-color: #15263e;
+  -webkit-box-shadow: 0 0 20px 20px #0c1628;
+          box-shadow: 0 0 20px 20px #0c1628;
+}
+
+.card .heroimage {
+  position: relative;
+  cursor: pointer;
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+  margin-bottom: 1rem;
+}
+
+.card .heroimage .eq {
+  max-height: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.card .heroimage .viewthing {
+  position: absolute;
+  background-color: rgba(0, 255, 247, 0.5);
+  top: 0;
+  height: 99%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 12px;
+}
+
+.card .heroimage:hover .viewthing {
+  opacity: 1;
+}
+
+.card .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: 'Outfit', sans-serif;
+}
+
+.card .content .title {
+  color: #fff;
+  font-weight: 600;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.card .content .title:hover {
+  color: #00fff7;
+}
+
+.card .content .description {
+  color: #8bacda;
+  font-weight: 300;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.card .content .costandtime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.card .content .costandtime .cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  color: #00fff7;
+}
+
+.card .content .costandtime .cost img {
+  margin-right: 0.5rem;
+}
+
+.card .content .costandtime .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8bacda;
+}
+
+.card .content .costandtime .time img {
+  margin-right: 0.5rem;
+}
+
+.card .content .line {
+  margin-top: 1rem;
+  height: 1px;
+  width: 100%;
+  background-color: #2f415b;
+}
+
+.card .content .by {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .content .by .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.card .content .by .image img {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  border: 1.5px solid white;
+}
+
+.card .content .by .byline {
+  margin-left: 1rem;
+  color: #8bacda;
+}
+
+.card .content .by .name {
+  color: white;
+  cursor: pointer;
+}
+
+.card .content .by .name:hover {
+  color: #00fff7;
+}
